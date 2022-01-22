@@ -1,0 +1,72 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-02-03 16:17 UTC
+Nmap scan report for buster4-zero (192.168.70.11)
+Host is up (0.0092s latency).
+Not shown: 65532 closed ports
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     GNU Inetutils FTPd 1.9.4
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| total 568
+| -rw-r--r--  1 1001  124     220 Apr 18  2019 .bash_logout
+| -rw-r--r--  1 1001  124    3523 Jan 11 12:52 .bashrc
+| -rw-r--r--  1 1001  124     807 Apr 18  2019 .profile
+| -rw-r-----  1 1001  124     135 Apr  1 00:35 DavidBierbrauerWasHere.txt
+| -rw-r-----  1 1001  124     106 Apr  1 02:45 apoorvgahlot.txt
+| -rw-r-----  1 1001  124   44996 Mar 28 01:42 matrix17.mp3
+| -rw-r-----  1 1001  124   17306 Mar 28 01:42 matrix55.mp3
+| -rw-r-----  1 1001  124   59298 Mar 28 01:42 pcloadletter.mp3
+| -rw-r-----  1 1001  124   10582 Mar 28 01:42 secure.wav
+| -rw-r-----  1 1001  124   75298 Mar 28 01:42 smartbomb.mp3
+|_-rw-r-----  1 1001  124  342204 Mar 28 01:42 yourtpsreports.mp3
+| ftp-syst: 
+|   SYST: Version: Linux 5.10.17+
+|   STAT: 
+|  buster4-zero FTP server status:
+|      ftpd (GNU inetutils) 1.9.4
+|      Connected to kali2-rpi (192.168.70.109)
+|      Session timeout is 900 seconds
+|      Waiting for user name
+|      TYPE: ASCII, FORM: Nonprint; STRUcture: File; transfer MODE: Stream
+|      No data connection
+|_End of status
+22/tcp open  ssh     OpenSSH 7.9p1 Raspbian 10+deb10u2+rpt1 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 89:60:71:7c:fa:1a:39:dc:ca:ba:e5:ec:d9:48:0a:3a (RSA)
+|   256 3e:b7:bb:67:13:21:f2:fd:ce:ee:69:df:b8:37:5e:62 (ECDSA)
+|_  256 0f:48:54:b7:be:07:82:4f:60:15:98:b0:65:18:20:4d (ED25519)
+23/tcp open  telnet
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port23-TCP:V=7.91%I=7%D=2/3%Time=601ACCDD%P=aarch64-unknown-linux-gnu%r
+SF:(NULL,15,"\xff\xfb%\xff\xfb&\xff\xfd\x18\xff\xfd\x20\xff\xfd#\xff\xfd'\
+SF:xff\xfd\$")%r(GenericLines,15,"\xff\xfb%\xff\xfb&\xff\xfd\x18\xff\xfd\x
+SF:20\xff\xfd#\xff\xfd'\xff\xfd\$")%r(tn3270,21,"\xff\xfb%\xff\xfb&\xff\xf
+SF:d\x18\xff\xfd\x20\xff\xfd#\xff\xfd'\xff\xfd\$\xff\xfe\x19\xff\xfc\x19\x
+SF:ff\xfd\0\xff\xfb\0")%r(GetRequest,15,"\xff\xfb%\xff\xfb&\xff\xfd\x18\xf
+SF:f\xfd\x20\xff\xfd#\xff\xfd'\xff\xfd\$")%r(RPCCheck,15,"\xff\xfb%\xff\xf
+SF:b&\xff\xfd\x18\xff\xfd\x20\xff\xfd#\xff\xfd'\xff\xfd\$")%r(Help,15,"\xf
+SF:f\xfb%\xff\xfb&\xff\xfd\x18\xff\xfd\x20\xff\xfd#\xff\xfd'\xff\xfd\$")%r
+SF:(SIPOptions,15,"\xff\xfb%\xff\xfb&\xff\xfd\x18\xff\xfd\x20\xff\xfd#\xff
+SF:\xfd'\xff\xfd\$")%r(NCP,15,"\xff\xfb%\xff\xfb&\xff\xfd\x18\xff\xfd\x20\
+SF:xff\xfd#\xff\xfd'\xff\xfd\$");
+MAC Address: B8:27:EB:82:40:91 (Raspberry Pi Foundation)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=2/3%OT=21%CT=1%CU=41948%PV=Y%DS=1%DC=D%G=Y%M=B827EB%TM
+OS:=601ACD1F%P=aarch64-unknown-linux-gnu)SEQ(SP=103%GCD=1%ISR=10C%TI=Z%CI=Z
+OS:%II=I%TS=A)OPS(O1=M5B4ST11NW6%O2=M5B4ST11NW6%O3=M5B4NNT11NW6%O4=M5B4ST11
+OS:NW6%O5=M5B4ST11NW6%O6=M5B4ST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE
+OS:88%W6=FE88)ECN(R=Y%DF=Y%T=40%W=FAF0%O=M5B4NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=4
+OS:0%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40
+OS:%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q
+OS:=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y
+OS:%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   9.23 ms buster4-zero (192.168.70.11)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 137.58 seconds
